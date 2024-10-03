@@ -1,0 +1,114 @@
+root {
+    /* Replace these sample colors with your actual color scheme */
+    --primary-color: #2E8B57;       /* Sea Green */
+    --secondary-color: #FFFFFF;     /* White */
+    --accent-color: #FFA500;        /* Orange */
+    --text-color: #333333;          /* Dark Gray */
+    --header-footer-bg: #004225;    /* Dark Green */
+    --link-color: #FFA500;          /* Orange for links */
+    --article-bg-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+}
+
+/* 2. Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    max-width: 1200px; /* Limits the width of the content */
+    margin: 0 auto;    /* Centers the content */
+    padding: 20px;
+}
+
+/* 3. Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* 4. Paragraph Styles */
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+/* 5. Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-footer-bg);
+    padding: 20px;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* 6. Navigation Styles */
+nav a {
+    text-decoration: none;        /* Removes underlines */
+    color: var(--secondary-color);
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* 7. Footer Styles */
+footer {
+    background-color: var(--header-footer-bg);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;        /* Removes underlines */
+    margin: 0 10px;
+}
+
+footer a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+footer a img:hover {
+    transform: scale(1.1);
+}
+
+/* 8. Responsive Design (Optional) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+}

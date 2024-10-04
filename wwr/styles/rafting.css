@@ -1,12 +1,12 @@
 root {
     /* Replace these sample colors with your actual color scheme */
-    --primary-color: #2E8B57;       /* Sea Green */
-    --secondary-color: #FFFFFF;     /* White */
+    --primary-color: #03045E;       /* Sea Green */
+    --secondary-color: #4cc9f0;     /* White */
     --accent-color: #FFA500;        /* Orange */
     --text-color: #333333;          /* Dark Gray */
     --header-footer-bg: #004225;    /* Dark Green */
     --link-color: #FFA500;          /* Orange for links */
-    --article-bg-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    --article-bg-color: #444 /* Semi-transparent white */
 }
 
 /* 2. Global Styles */
@@ -18,7 +18,7 @@ root {
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--text-color);
+    color: #03045E;
     background-color: var(--secondary-color);
     max-width: 1200px; /* Limits the width of the content */
     margin: 0 auto;    /* Centers the content */

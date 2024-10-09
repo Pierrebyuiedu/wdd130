@@ -89,6 +89,18 @@ footer a img {
     margin: 0 10px;
 }
 
-footer a {
-    text-decoration: none;
+footer a img:hover {
+    transform: scale(1.1);
+}
+
+/* 8. Responsive Design (Optional) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
 }

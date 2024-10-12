@@ -16,53 +16,98 @@
     <!-- Header Section -->
     <header>
         <div class="logo">
-            <img src="images/crossedoars.jpeg" alt="Rapids Logo">
+            <img src="images/crossedoars.jpeg" alt="White Water Rafting Rapids Logo">
         </div>
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <div class="hero">
-        <h1>White Water Rafting</h1>
-        <article>
-            <h2>Adventure Experience</h2> <!-- Added heading inside the article -->
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam inventore quas ratione at nostrum recusandae voluptatem ducimus molestias.</p>
-            <img src="images/rafting21_600.png" alt="Happy Client">
-        </article>
-    </div>
+    <!-- Main Content -->
+    <main>
+        <!-- About Us Section -->
+        <section class="about-us">
+            <h1>About Us</h1>
+            <div class="about-content">
+                <img src="images/rafting9_600.jpg" alt="Our Team" class="about-image">
+                <div class="about-text">
+                    <h2>Our Journey</h2>
+                    <p>Founded in 2010, White Water Rafting Rapids has been dedicated to providing exhilarating and safe rafting experiences on some of the most beautiful rivers. Our team of experienced guides is passionate about adventure and committed to ensuring every trip is memorable.</p>
+                    <h2>Our Mission</h2>
+                    <p>Our mission is to offer top-notch white water rafting adventures that cater to both beginners and seasoned rafters. We prioritize safety, environmental stewardship, and customer satisfaction in every expedition.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- History Section -->
-    <section>
-        <h2>History</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est odit aperiam dicta cum accusamus consequuntur. </p>
-    </section>
+        <!-- History Section -->
+        <section class="history">
+            <h2>Our History</h2>
+            <div class="history-content">
+                <div class="history-timeline">
+                    <div class="timeline-item">
+                        <h3>2010</h3>
+                        <p>White Water Rafting Rapids was established, offering rafting trips on the Colorado River.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2015</h3>
+                        <p>Expanded operations to include Bear River and Smokey River adventures.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2020</h3>
+                        <p>Introduced eco-friendly practices and sustainability initiatives.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2024</h3>
+                        <p>Celebrating 14 years of adventure and countless satisfied customers.</p>
+                    </div>
+                </div>
+                <div class="history-image">
+                    <img src="images/rafting59_600.jpg" alt="Historical Rafting Adventure">
+                </div>
+            </div>
+        </section>
 
-    <!-- Adventure Awaits You Section -->
-    <section>
-        <h2>Adventure Awaits You!</h2>
-        <img src="images/deso-boats.jpg" alt="Peaceful Rapids">
-        <p>Peaceful Rapids</p>
-        <img src="images/rafting53_600.jpg" alt="Colorado River">
-        <p>Colorado River</p>
-        <img src="images/rafting64_600.jpg" alt="Bear River">
-        <p>Bear River</p>
-        <img src="images/rafting30_600.jpg" alt="Smokey River">
-        <p>Smokey River</p>
-        <img src="images/rafting17_600.jpg" alt="Boise River">
-        <p>Boise River</p>
-    </section>
+        <!-- Adventures Section -->
+        <section class="adventures">
+            <h2>Our Adventures</h2>
+            <div class="adventure-grid">
+                <figure>
+                    <img src="images/deso-boats.jpg" alt="Los Dientes del Diablo" loading="lazy">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting53_600.jpg" alt="Big Mallard" loading="lazy">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting64_600.jpg" alt="Half Day Adventure" loading="lazy">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting30_600.jpg" alt="Full Day Thrills" loading="lazy">
+                    <figcaption>Full Day Thrills</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting17_600.jpg" alt="Night Rafting" loading="lazy">
+                    <figcaption>Night Rafting</figcaption>
+                </figure>
+            </div>    
+        </section>
+    </main>
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 White Water Rafting &#8226; Pierre</p>
-        <a href="#"><img src="images/Facebook.webp" alt="Facebook"></a>
-        <a href="#"><img src="images/14_social-128.webp" alt="Twitter"></a>
-        <a href="#"><img src="images/2018_social_media_popular_app_logo_youtube-128.webp" alt="YouTube"></a>
+        <div class="social-links">
+            <a href="#" aria-label="Visit our Facebook page"><img src="images/Facebook.webp" alt=""></a>
+            <a href="#" aria-label="Visit our Twitter profile"><img src="images/14_social-128.webp" alt=""></a>
+            <a href="#" aria-label="Visit our YouTube channel"><img src="images/2018_social_media_popular_app_logo_youtube-128.webp" alt=""></a>
+        </div>
     </footer>
 
 </body>

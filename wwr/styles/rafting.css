@@ -3,88 +3,219 @@
     --secondary-color: #A1286A;
     --font-color: black;
     --background-color: #f5f5f5;
-}
+}    
 
 body {
-    font-family: "Roboto", serif;
-    font-weight: 400;
-    color: var(--font-color);
-    background-color: var(--background-color);
-    max-width: 1200px;
-    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #941449;
+}
+
+.logo img {
+    max-height: 60px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
     padding: 0;
 }
 
-header {
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    font-weight: bold;
+    color: #f5f5f5;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* About Us Section */
+.about-us {
+    margin-top: 0;
+    position: relative;
+    text-align: center;
+    background-image: url('../images/salmon-boats.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+}
+
+.about-us h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.about-image {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h2 {
+    margin-top: 0;
+    color: rgb(234, 255, 0);
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* History Section */
+.history {
+    margin-top: 60px;
+}
+
+.history h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.history-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.history-timeline {
+    flex: 1 1 300px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-item h3 {
+    margin: 0 0 5px 0;
+    color: #007BFF;
+}
+
+.timeline-item p {
+    margin: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #007BFF;
+    border-radius: 50%;
+}
+
+.history-image {
+    flex: 1 1 300px;
+}
+
+.history-image img {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Adventures Section */
+.adventures {
+    margin-top: 60px;
+}
+
+.adventures h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.adventure-grid figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventure-grid img {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.adventure-grid figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Footer Styles */
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color);
-    padding: 1rem;
+    padding: 20px;
+    background-color: #941449;
+    flex-wrap: wrap;
 }
 
-header img {
-    width: 100px;
+footer p {
+    margin: 0;
+    color: #f5f5f5;
 }
 
-nav a {
-    margin-right: 1rem;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.social-links {
+    display: flex;
+    gap: 15px;
 }
 
-.hero {
-    position: relative;
-    text-align: center;
-    background-image: url('../images/rafting61_1024.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 210px 0;
+.social-links a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
 }
 
-.hero h1 {
-    color: white;
-    font-size: 3rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 1rem;
-    color: white;
-    max-width: 300px;
-}
-
-.hero article img {
-    width: 100%;
-    height: auto;
-}
-
-section {
-    margin: 2rem 0;
-}
-
-section img {
-    width: 90%;
-    max-width: 600px;
-    height: auto;
-}
-
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
-footer a img {
-    width: 30px;
-    margin: 0 10px;
+.social-links a:hover img {
+    transform: scale(1.2);
 }

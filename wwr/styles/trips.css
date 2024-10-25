@@ -24,11 +24,6 @@ a {
     color: inherit;
 }
 
-main {
-    padding: 20px;
-    background-color: hsl(219, 26%, 58%);
-}
-
 /* Header Styles */
 header {
     display: grid;
@@ -90,6 +85,7 @@ footer a:hover {
 /* Main Content Styles */
 main {
     padding: 2rem;
+    background-color: hsl(219, 26%, 58%);
 }
 
 .cta {

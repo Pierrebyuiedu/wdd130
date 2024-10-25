@@ -39,6 +39,10 @@ header nav ul li a {
     text-decoration: none;
 }
 
+main {
+    background-color: hsl(219, 26%, 58%);
+}
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -63,7 +67,7 @@ header nav ul li a {
 /* Newsletter Form */
 .newsletter {
     padding: 1em;
-    background-color: #f4f4f4;
+    background-color: hsl(219, 26%, 58%);
     text-align: center;
 }
 
